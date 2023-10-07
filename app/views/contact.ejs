@@ -1,0 +1,53 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <p>Contact Me</p>
+    </div>
+    </main>
+    
+    <!--bottom nav-->
+    <body>
+      <p>Email: kjoghtap@my.centennialcollegee.ca</p>
+      <p>Phone: 647-464-2219</p>
+    
+    
+
+      <form action="/submit-contact-form" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+    
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber"><br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+        <input type="submit" value="Submit">
+
+
+      </form>
+
+      <a href="/">Back to Home</a>
+
+    </body>
+   
+   
+
+      <footer>
+        <hr>
+         Copyright &copy; 2023 Keyvan Joghtapour 301338469
+        <br>
+        Email: <a id="mail" href="mailto:kjoghtap@my.centennialcollegee.ca" target="_blank">kjoghtap@my.centennialcollegee.ca</a>
+        <br>
+        Web:  <a href="https://www.centennialcollege.ca/">https://www.centennialcollege.ca/</a>
+      </footer>
